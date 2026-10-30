@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PROFIT FITNESS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#090a0c;color:white;font-family:Arial,sans-serif}
+header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#111}
+.logo{font-size:22px;font-weight:900;letter-spacing:2px}
+.logo span,h1 span{color:#d8b45a}
+nav a{color:white;text-decoration:none;margin-left:18px;font-size:13px}
+.hero{min-height:85vh;display:flex;align-items:center;padding:60px 8%;background:radial-gradient(circle at 80% 40%,#493819,#111 40%,#090a0c 75%)}
+.hero div{max-width:650px}
+.tag{color:#d8b45a;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(48px,9vw,85px);line-height:1;margin:20px 0}
+p{color:#aaa;line-height:1.8}
+.btn{display:inline-block;background:#d8b45a;color:#111;padding:14px 23px;margin-top:25px;text-decoration:none;font-weight:bold;border-radius:4px}
+section{padding:80px 8%;border-top:1px solid #292929}
+h2{font-size:38px;margin:12px 0 25px}
+.gold{color:#d8b45a}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#15171b;border:1px solid #303030;padding:28px;border-radius:10px}
+.card h3{margin:12px 0;color:#d8b45a}
+.about{max-width:700px}
+footer{text-align:center;padding:25px;color:#888;background:#111}
+@media(max-width:650px){
+header{flex-direction:column;gap:15px}
+nav a{margin:0 7px}
+.cards{grid-template-columns:1fr}
+.hero{min-height:70vh}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">PROFIT <span>FITNESS</span></div>
+<nav>
+<a href="#home">HOME</a>
+<a href="#about">ABOUT</a>
+<a href="#training">TRAINING</a>
+<a href="#contact">CONTACT</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<div>
+<div class="tag">TRAIN WITH PURPOSE</div>
+<h1>BUILD YOUR<br><span>OWN LEGACY.</span></h1>
+<p>Welcome to Profit Fitness. Your journey towards strength, discipline and a healthier lifestyle starts here.</p>
+<a href="#training" class="btn">EXPLORE FITNESS →</a>
+</div>
+</div>
+
+<section id="about">
+<div class="about">
+<div class="tag">01 / ABOUT ME</div>
+<h2>MY FITNESS <span class="gold">JOURNEY</span></h2>
+<p>I'm the person behind Profit Fitness. I believe in consistency, discipline and continuous improvement. This website is where I share my fitness journey and training interests.</p>
+</div>
+</section>
+
+<section id="training">
+<div class="tag">02 / TRAINING</div>
+<h2>MY <span class="gold">FOCUS AREAS</span></h2>
+<div class="cards">
+<div class="card">
+<h3>01. STRENGTH</h3>
+<p>Building strength through controlled exercise and proper technique.</p>
+</div>
+<div class="card">
+<h3>02. FITNESS</h3>
+<p>Improving fitness through regular movement and healthy habits.</p>
+</div>
+<div class="card">
+<h3>03. RECOVERY</h3>
+<p>Rest, sleep and nutrition are important parts of progress.</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="tag">03 / CONTACT</div>
+<h2>LET'S <span class="gold">CONNECT.</span></h2>
+<p>Follow my journey on Instagram.</p>
+<a href="https://instagram.com/yourusername" class="btn">INSTAGRAM ↗</a>
+</section>
+
+<footer>
+© 2026 PROFIT FITNESS | ALL RIGHTS RESERVED
+</footer>
+
+</body>
+</html>
