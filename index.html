@@ -4,95 +4,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PROFIT FITNESS</title>
+<title>Profit Fitness | Official Portfolio</title>
+<meta name="description" content="Profit Fitness - Fitness, discipline and a stronger lifestyle.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:#090a0c;color:white;font-family:Arial,sans-serif}
-header{padding:20px 7%;display:flex;justify-content:space-between;align-items:center;background:#111}
-.logo{font-size:22px;font-weight:900;letter-spacing:2px}
-.logo span,h1 span{color:#d8b45a}
-nav a{color:white;text-decoration:none;margin-left:18px;font-size:13px}
-.hero{min-height:85vh;display:flex;align-items:center;padding:60px 8%;background:radial-gradient(circle at 80% 40%,#493819,#111 40%,#090a0c 75%)}
-.hero div{max-width:650px}
-.tag{color:#d8b45a;letter-spacing:4px;font-size:12px}
-h1{font-size:clamp(48px,9vw,85px);line-height:1;margin:20px 0}
-p{color:#aaa;line-height:1.8}
-.btn{display:inline-block;background:#d8b45a;color:#111;padding:14px 23px;margin-top:25px;text-decoration:none;font-weight:bold;border-radius:4px}
-section{padding:80px 8%;border-top:1px solid #292929}
-h2{font-size:38px;margin:12px 0 25px}
-.gold{color:#d8b45a}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#15171b;border:1px solid #303030;padding:28px;border-radius:10px}
-.card h3{margin:12px 0;color:#d8b45a}
-.about{max-width:700px}
-footer{text-align:center;padding:25px;color:#888;background:#111}
-@media(max-width:650px){
-header{flex-direction:column;gap:15px}
-nav a{margin:0 7px}
-.cards{grid-template-columns:1fr}
-.hero{min-height:70vh}
+body{
+ background:#090909;color:white;
+ font-family:Arial,sans-serif;line-height:1.6
+}
+:root{--gold:#d9b45b;--muted:#aaa;--panel:#151515}
+header{
+ position:sticky;top:0;z-index:10;
+ display:flex;justify-content:space-between;
+ align-items:center;gap:15px;flex-wrap:wrap;
+ padding:16px 7%;background:#101010;
+ border-bottom:1px solid #292929
+}
+.logo{font-size:22px;font-weight:900;color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#ddd;text-decoration:none;font-size:13px}
+nav a:hover{color:var(--gold)}
+.hero{
+ min-height:490px;padding:85px 8%;
+ display:flex;flex-direction:column;
+ justify-content:center;align-items:flex-start;
+ background:linear-gradient(90deg,#080808 15%,#080808aa),
+ url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1400');
+ background-position:center;background-size:cover
+}
+.eyebrow{color:var(--gold);letter-spacing:4px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(42px,8vw,76px);line-height:1.08;margin:18px 0}
+.hero p{max-width:500px;color:#ccc}
+.btn{
+ display:inline-block;margin-top:25px;padding:13px 25px;
+ background:var(--gold);color:#111;
+ text-decoration:none;font-weight:bold;border-radius:4px
+}
+section{padding:75px 8%}
+.heading{font-size:32px;margin-bottom:10px}
+.sub{color:var(--muted);margin-bottom:30px}
+.grid{
+ display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+ gap:18px
+}
+.card{
+ padding:25px;background:var(--panel);
+ border:1px solid #292929;border-radius:10px;
+ transition:.2s
+}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card h3{color:var(--gold);margin-bottom:10px}
+.card p{color:#aaa;font-size:14px}
+.about{
+ background:#111;border-top:1px solid #242424;
+ border-bottom:1px solid #242424
+}
+.about-content{max-width:750px}
+.gallery .card{min-height:145px;display:flex;flex-direction:column;justify-content:end}
+.gallery .one{background:linear-gradient(transparent,#111),url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=700') center/cover}
+.gallery .two{background:linear-gradient(transparent,#111),url('https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=700') center/cover}
+.gallery .three{background:linear-gradient(transparent,#111),url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=700') center/cover}
+.contact{
+ text-align:center;background:#111
+}
+.contact a{color:var(--gold);text-decoration:none}
+footer{text-align:center;padding:28px;color:#888}
+footer strong{color:var(--gold)}
+@media(max-width:600px){
+ header{justify-content:center}
+ nav{justify-content:center;gap:12px}
+ section{padding:55px 6%}
+ .hero{min-height:400px;padding:65px 7%}
 }
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo">PROFIT <span>FITNESS</span></div>
-<nav>
-<a href="#home">HOME</a>
-<a href="#about">ABOUT</a>
-<a href="#training">TRAINING</a>
-<a href="#contact">CONTACT</a>
-</nav>
+ <div class="logo">PROFIT FITNESS</div>
+ <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+ </nav>
 </header>
 
-<div class="hero" id="home">
-<div>
-<div class="tag">TRAIN WITH PURPOSE</div>
-<h1>BUILD YOUR<br><span>OWN LEGACY.</span></h1>
-<p>Welcome to Profit Fitness. Your journey towards strength, discipline and a healthier lifestyle starts here.</p>
-<a href="#training" class="btn">EXPLORE FITNESS →</a>
-</div>
-</div>
+<main>
+<section class="hero" id="home">
+ <div class="eyebrow">FITNESS • DISCIPLINE • LIFESTYLE</div>
+ <h1>BUILD A<br>STRONGER YOU.</h1>
+ <p>Welcome to Profit Fitness. Your destination for fitness knowledge,
+ healthy habits and a stronger lifestyle.</p>
+ <a href="#about" class="btn">Discover More</a>
+</section>
 
 <section id="about">
-<div class="about">
-<div class="tag">01 / ABOUT ME</div>
-<h2>MY FITNESS <span class="gold">JOURNEY</span></h2>
-<p>I'm the person behind Profit Fitness. I believe in consistency, discipline and continuous improvement. This website is where I share my fitness journey and training interests.</p>
-</div>
+ <div class="about-content">
+  <div class="eyebrow">WHO WE ARE</div>
+  <h2 class="heading">About Profit Fitness</h2>
+  <p class="sub">More than fitness. A lifestyle built on discipline.</p>
+  <p>Profit Fitness is a fitness-focused brand created to make
+  fitness knowledge simple and accessible. Our goal is to encourage
+  people to learn, stay consistent and build healthy habits.</p>
+ </div>
 </section>
 
-<section id="training">
-<div class="tag">02 / TRAINING</div>
-<h2>MY <span class="gold">FOCUS AREAS</span></h2>
-<div class="cards">
-<div class="card">
-<h3>01. STRENGTH</h3>
-<p>Building strength through controlled exercise and proper technique.</p>
-</div>
-<div class="card">
-<h3>02. FITNESS</h3>
-<p>Improving fitness through regular movement and healthy habits.</p>
-</div>
-<div class="card">
-<h3>03. RECOVERY</h3>
-<p>Rest, sleep and nutrition are important parts of progress.</p>
-</div>
-</div>
+<section id="services">
+ <div class="eyebrow">WHAT WE OFFER</div>
+ <h2 class="heading">Our Services</h2>
+ <p class="sub">Explore what Profit Fitness is about.</p>
+ <div class="grid">
+  <div class="card"><h3>Workout Guidance</h3><p>Learn exercise techniques and training basics.</p></div>
+  <div class="card"><h3>Fitness Education</h3><p>Understand muscles, recovery and fitness fundamentals.</p></div>
+  <div class="card"><h3>Nutrition Knowledge</h3><p>Learn about balanced food and everyday nutrition.</p></div>
+  <div class="card"><h3>Healthy Lifestyle</h3><p>Build consistent and sustainable daily habits.</p></div>
+ </div>
 </section>
 
-<section id="contact">
-<div class="tag">03 / CONTACT</div>
-<h2>LET'S <span class="gold">CONNECT.</span></h2>
-<p>Follow my journey on Instagram.</p>
-<a href="https://instagram.com/yourusername" class="btn">INSTAGRAM ↗</a>
+<section class="gallery about" id="gallery">
+ <div class="eyebrow">OUR WORLD</div>
+ <h2 class="heading">Fitness Gallery</h2>
+ <p class="sub">A glimpse into the fitness lifestyle.</p>
+ <div class="grid">
+  <div class="card one"><h3>Training</h3></div>
+  <div class="card two"><h3>Strength</h3></div>
+  <div class="card three"><h3>Discipline</h3></div>
+ </div>
 </section>
+
+<section class="contact" id="contact">
+ <div class="eyebrow">GET IN TOUCH</div>
+ <h2 class="heading">Stay Connected</h2>
+ <p class="sub">Follow our fitness journey and updates.</p>
+ <a href="https://instagram.com/" target="_blank">Instagram</a>
+</section>
+</main>
 
 <footer>
-© 2026 PROFIT FITNESS | ALL RIGHTS RESERVED
+ <strong>PROFIT FITNESS</strong>
+ <p>Build Knowledge. Build Strength.</p>
+ <p>© 2026 Profit Fitness. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
+
+
+
